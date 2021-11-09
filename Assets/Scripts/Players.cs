@@ -32,7 +32,7 @@ public class Players : MonoBehaviour
         rb.velocity = new Vector2(rb.velocity.x, move * speed);
     }
 
-    private void Reset()
+    public void Reset()
     {
         rb.velocity = Vector2.zero;
         transform.position = startPos;
